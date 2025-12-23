@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>Travel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/styles/travel.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="travel.html" id="logo">
+                <img src="../assets/images/logo.svg" style="width: 200px; " alt="Website logo with an airplane and website name"/>
+            </a>
+            <ul>
+                <li>
+                    <a href="#Home">HOME</a>
+                </li>
+                <li>
+                    <a href="#Explore">EXPLORE</a>
+                </li>
+                <li>
+                    <a href="#Special Plans">SPECIAL PLANS</a>
+                </li>
+                <li>
+                    <a href="#About Us">ABOUT US</a>
+                </li>
+            </ul>
+        </nav>
+        <div style="padding-top: 42px;">
+            <div id="header-text">
+                <h1>TRAVEL</h1>
+            </div>
+            <div style="padding-top: 85px; width:30%; letter-spacing: 2px; line-height: 1;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="input-container">
+                <input type="text" id="from" name="from" placeholder="From" style="flex: 2;"/>
+                <hr>
+                <input type="text" id="to" name="to" placeholder="To" style="flex: 2.5;"/>
+                <hr>
+                <input type="date" id="since" name="since" style="flex: 1.25;"/>
+                <hr>
+                <input type="date" id="until" name="until" style="flex: 1.25;"/>
+                <hr>
+                <button type="button" onclick="ShowAlert()" name="search" style="flex: 1.75;">SEARCH</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div>
+            <div>
+                <h3 style="text-align: center; letter-spacing: 3px;">
+                    THIS WEEK IN OUR BLOG
+                </h3>
+            </div>
+            <div style="padding-top:32px; display: flex; ">
+                <div style="width: 30%;">
+                    <div>
+                        <img src="../assets/images/blog1.png" width="250px" height="150px" />
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                    </div>
+                </div>
+                <div style="width: 30%;">
+                    <div>
+                        <img src="../assets/images/blog2.png" width="250px" height="150px" />
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                    </div>
+                </div>
+                <div style="width: 30%;">
+                    <div>
+                        <img src="../assets/images/blog3.png" width="250px" height="150px" />
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <script src="../assets/scripts/showAlert.js"></script>
+    <script src="../assets/scripts/currentDate.js"></script>
+</body>
