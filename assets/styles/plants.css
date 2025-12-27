@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-image: url(../images/plants/headerBG.png);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+li a {
+    display: block;
+    color: #49b81a;
+    padding-right: 0px;
+    padding-left: 32px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+#header-text-container-1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 64px;
+    color: #49b81a;
+}
+
+#header-text-container-2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 64px;
+    color: #d45b23;
+}
+
+#tips-section {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    background-image:url(../images/plants/tipsBG.png);
+    height: 654px;
+}
+
+#shop-section {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    height: 654px;
+    background-color: aqua;
+}
+
+#quote-section {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    height: 654px;
+    background-image:url(../images/plants/quoteBG.png);
+}
+
+#care-section {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    height: 654px;
+    background-color: rgb(194, 194, 194);
+}
+
+#arrivals-section {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    height: 654px;
+    background-color: rgb(255, 98, 98);
+}
+
+#bedroom-section {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    height: 654px;
+    background-color: rgb(235, 255, 181);
+}
+
+footer {
+    background-color: black;
+    height: 300px;
+}

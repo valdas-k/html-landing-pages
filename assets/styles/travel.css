@@ -1,4 +1,4 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-image: url(../images/headerBG.png);
+    background-image: url(../images/travel/headerBG.png);
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
