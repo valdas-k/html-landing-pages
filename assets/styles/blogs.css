@@ -1,32 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    width: 1200px;
-    margin: auto;
-}
-
-header {
+header, footer {
     padding-left: 96px;
     padding-right: 96px;
+    text-align: center;
     padding-bottom: 32px;
     padding-top: 32px;
-    text-align: center;
 }
 
 footer {
-    padding-left: 96px;
-    padding-right: 96px;
-    padding-bottom: 32px;
-    padding-top: 32px;
     background: linear-gradient(90deg, #ffeab1, #ffdb77);
     display: flex;
     flex-direction: column;
-    text-align: center;
     font-size: 18px;
 }
 

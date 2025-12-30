@@ -1,21 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    width: 1200px;
-    margin: auto;
-}
-
 header {
     background-image: url(../images/plants/headerBG.png);
+}
+
+header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 32px;
     padding-top: 32px;
+}
+
+header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, #care-section {
     height: 700px;
 }
 
@@ -59,44 +53,28 @@ nav {
 }
 
 #tips-section {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 32px;
-    padding-top: 32px;
     background-image:url(../images/plants/tipsBG.png);
-    height: 700px;
 }
 
 #shop-section {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    height: 700px;
     background-color: rgb(235, 255, 255);
 }
 
 #quote-section {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 32px;
-    padding-top: 32px;
-    height: 700px;
     background-image:url(../images/plants/quoteBG.png);
 }
 
 #care-section {
-    padding-left: 100px;
-    padding-right: 100px;
     padding-bottom: 32px;
-    height: 700px;
     background: linear-gradient(180deg, rgb(196, 226, 255) 70%, rgb(235, 249, 255) 30%);
+    padding-left: 100px;
+    padding-right: 32px;
 }
 
 #bedroom-section {
     padding-left: 100px;
-    padding-bottom: 32px;
-    height: 700px;
+    padding-right: 0px;
+    padding-top: 0px;
     background-color: rgb(181, 255, 166);
 }
 
@@ -105,7 +83,6 @@ nav {
     padding: 84px 136px;
     display: flex;
     justify-content: center;
-    height: 700px;
 }
 
 #layer-container {
@@ -122,14 +99,11 @@ nav {
     width: 250px;
     height: 500px;
     padding: 36px 28px 16px 28px;
+    border-radius: 0px 0px 16px 16px;
 }
 
 footer {
     background-color: black;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 32px;
-    padding-top: 32px;
 }
 
 #shop-button {
@@ -137,14 +111,14 @@ footer {
     background-color: rgb(1, 199, 1); 
     padding: 8px 12px 8px 12px;
     border: 0px;
+}
+
+#shop-button, #shop-button:hover {
     border-radius: 16px;
 }
 
 #shop-button:hover {
     color: rgb(255, 255, 255); 
     background-color: rgb(17, 146, 17); 
-    padding: 8px 12px 8px 12px;
-    letter-spacing: 2px;
     text-decoration: underline;
-    border-radius: 16px;
 }

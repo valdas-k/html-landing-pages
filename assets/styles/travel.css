@@ -1,28 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header, section, #content-section, #sales-section, #shop-section, footer {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    width: 1200px;
-    margin: auto;
+section, #content-section, #sales-section, #shop-section {
+    padding-bottom: 64px;
+    padding-top: 64px;
 }
 
 header {
     background-image: url(../images/travel/headerBG.png);
-    padding-left: 100px;
-    padding-right: 100px;
     padding-bottom: 64px;
     padding-top: 32px;
 }
 
 section {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 64px;
-    padding-top: 64px;
+
     background-color: aliceblue;
 }
 
@@ -108,26 +101,14 @@ input[type="date"] {
 }
 
 #content-section {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 64px;
-    padding-top: 64px;
     background-color: rgb(255, 240, 249);
 }
 
 #sales-section {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 64px;
-    padding-top: 64px;
     background-color: white;
 }
 
 #shop-section {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 64px;
-    padding-top: 64px;
     background: linear-gradient(90deg, rgb(253, 220, 220) 40%, rgb(255, 171, 171) 65%, rgb(253, 97, 97));
 }
 
@@ -141,8 +122,6 @@ input[type="date"] {
 }
 
 footer {
-    padding-left: 100px;
-    padding-right: 100px;
     padding-bottom: 32px;
     padding-top: 64px;
     background: linear-gradient(180deg, rgb(234, 209, 255), rgb(207, 153, 255));
@@ -161,4 +140,8 @@ img {
 
 button {
     border-radius: 16px;
+}
+
+.input-hr {
+    color: #8a8a8a;
 }
