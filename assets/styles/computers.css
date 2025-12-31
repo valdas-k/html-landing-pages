@@ -10,7 +10,6 @@ ul {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    
 }
 
 li a {
@@ -50,35 +49,33 @@ nav {
 }
 
 #video-section {
-    padding: 64px 128px 64px 128px;
     background-color: rgb(49, 49, 49);
     color: white;
 }
 
-#partners-section {
+#video-section, #partners-section, #qualities-section, #staff-section, #gallery-section, footer {
     padding: 64px 128px 64px 128px;
+}
+
+#partners-section {
     background-color: rgb(26, 35, 87);
     color: white;
 }
 
 #qualities-section {
-    padding: 64px 128px 64px 128px;
     background-color: rgb(255, 225, 200);
 }
 
 #staff-section {
-    padding: 64px 128px 64px 128px;
     background-color: rgb(200, 201, 255);
 }
 
 #gallery-section {
-    padding: 64px 128px 64px 128px;
     background-color: rgb(227, 255, 200);
     text-align: center;
 }
 
 footer {
     background-color: rgb(49, 49, 49);
-    padding: 64px 128px 64px 128px;
     color: white;
 }
