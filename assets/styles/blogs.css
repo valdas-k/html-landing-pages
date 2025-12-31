@@ -1,22 +1,21 @@
 header, footer {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 32px;
+    padding-right: 32px;
     text-align: center;
-    padding-bottom: 32px;
-    padding-top: 32px;
 }
 
 footer {
-    background: linear-gradient(90deg, #ffeab1, #ffdb77);
     display: flex;
     flex-direction: column;
     font-size: 18px;
+    height: 100px;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 16px;
 }
 
 ul {
@@ -66,7 +65,7 @@ input[type="text"] {
 section {
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 48px;
+    padding-bottom: 32px;
     padding-top: 48px;
     display: flex;
     flex-direction: row;
@@ -88,26 +87,53 @@ article {
     width: 100%;
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 48px;
-    padding-top: 48px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #content-container-header {
     width: 100%;
     font-size: 32px;
     text-decoration: underline;
+    padding-top: 32px;
 }
 
 #article-container {
-    width: 64%;
+    width: 62%;
     display: flex;
     flex-direction: column;
 }
 
 #aside-container {
-    width: 33%;
+    width: 35%;
     display: flex;
     flex-direction: column;
+    background-color: beige;
+}
+
+aside {
+    padding: 32px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+
+#categories, #contact, #follow, #news-letter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+#icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

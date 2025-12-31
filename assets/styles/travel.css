@@ -8,6 +8,23 @@ section, #content-section, #sales-section, #shop-section {
     padding-top: 64px;
 }
 
+#final-section {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 650px;
+    background-color: beige;
+}
+
+#final-section-2 {
+    padding-bottom: 64px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: rgb(227, 220, 245);
+}
+
 header {
     background-image: url(../images/travel/headerBG.png);
     padding-bottom: 64px;
