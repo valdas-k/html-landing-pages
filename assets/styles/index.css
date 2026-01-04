@@ -1,0 +1,24 @@
+.index-image {
+  width: 200px;
+  height: 150px;
+}
+
+#index-image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 16px;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+body { background-color: azure; }
+
+@media (min-width: 1024px) {
+  .index-image {
+    width: 325px;
+    height: 250px;
+  }
+}

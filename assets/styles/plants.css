@@ -1,6 +1,14 @@
-header {
-  background-image: url(../images/plants/header.png);
+.care-detailed-info-container, #header-text-container, #tips-section, .footer-column-container, #bedroom-text-container,
+.shop-item, #shop-section, #arrivals-habits-info, #arrivals-additional-info, #arrivals-info, #quote-text-container, #quote-section {
+  display: flex; flex-direction: column; flex-wrap: wrap;
 }
+
+#care-info-container, #header-icons-container, #care-header-container, #care-header-text-container, #footer-text-container, nav, ul,
+#bedroom-section, #bedroom-img-container, .shop-item-text-container, #shop-subheader-container, #shop-items-container, .arrivals-row-container {
+  display: flex; flex-direction: row; flex-wrap: wrap;
+}
+
+header { background-image: url(../images/plants/header.png); }
 
 #tips-section, header, #quote-section {
   background-repeat: no-repeat;
@@ -9,73 +17,33 @@ header {
 }
 
 header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer {
-  padding: 32px 100px;
+  padding: 32px 16px;
 }
 
 header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, #care-section {
   height: 700px;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li a {
-  display: block;
-  color: #49b81a;
-  padding-right: 0px;
-  padding-left: 32px;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-nav {
-  justify-content: space-between;
-  align-items: center;
-  letter-spacing: 2px;
-}
-
-#shop-button {
-  color: white; 
-  background-color: rgb(1, 199, 1); 
-  padding: 8px 12px;
-  border: 0px;
-}
-
-#shop-button, #shop-button:hover {
-  border-radius: 16px;
-}
-
-#shop-button:hover {
-  color: rgb(255, 255, 255); 
-  background-color: rgb(17, 146, 17); 
-  text-decoration: underline;
-}
-
+/* header */
 #header-text-container {
   align-items: start;
-  padding-top: 64px;
+  padding-top: 24px;
   color: #49b81a;
-  width: 40%;
-  row-gap: 14px;
+  width: 70%;
+  row-gap: 36px;
 }
 
-#header-small-text {
-  font-size: 24px;
-}
+#header-small-text { font-size: 1.125rem; }
 
 #header-big-text {
-  font-size: 78px;
+  font-size: 4rem;
   width: 30%;
   font-weight: 700;
 }
 
 #header-medium-text {
   letter-spacing: 2px;
-  font-size: 42px;
+  font-size: 2rem;
 }
 
 #header-divider {
@@ -89,53 +57,78 @@ nav {
   column-gap: 14px;
   padding-top: 8px;
 }
+/* header end */
 
+/* nav */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: #49b81a;
+  padding-right: 0px;
+  padding-left: 16px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 2px;
+}
+/* nav end */
+
+/* tips section */
 #tips-section {
   background-image:url(../images/plants/quote.png);
-  padding-top: 20%;
+  padding-top: 50%;
   align-items: start;
-  text-align: right;
 }
 
-#tips-text-container {
-  width: 40%;
-}
+#tips-text-container { width: 100%; text-align: right;}
 
 #tips-small-text {
   color: #adadad;
-  font-size: 22px;
+  font-size: 1.375rem;
   padding-top: 18px; 
 }
 
 #tips-big-text {
-  color: white; font-size: 48px; 
+  color: white;
+  font-size: 3rem; 
 }
 
 #tips-medium-text {
   color: white;
-  font-size: 26px;
+  font-size: 1.625rem;
   padding-top: 32px; 
 }
+/* tips section end */
 
+/* quote section */
 #quote-section {
   background-image:url(../images/plants/tips.png);
-  padding-top: 20%;
-  align-items: end;
+  justify-content: center;
 }
 
-#quote-text-container {
-  width: 50%;
-}
+#quote-text-container { width: 100%; }
 
 #quote-text {
   color: rgb(207, 207, 207);
-  font-size: 64px;
+  font-size: 4rem;
   text-align: left;
 }
+/* quote section end */
 
+/* arrivals section */
 #arrivals-section {
   background: linear-gradient(180deg, rgb(172, 198, 250) 50%, rgb(147, 160, 230) 50%);
-  padding: 84px 136px;
+  padding: 16px 24px;
   display: flex;
   justify-content: center;
 }
@@ -148,7 +141,8 @@ nav {
 #arrivals-img {
   width: 100%;
   height: 100%;
-  background-image: url(../images/plants/arrivals.png); border-radius: 16px;
+  background-image: url(../images/plants/arrivals.png);
+  border-radius: 16px;
 }
 
 #arrivals-info {
@@ -156,7 +150,7 @@ nav {
   top: -116%;                      
   left: 10%;
   background: white;
-  transform: translateY(1px);
+  transform: translateY(91px);
   width: 250px;
   height: 500px;
   padding: 36px 28px 16px 28px;
@@ -166,69 +160,220 @@ nav {
 }
 
 #arrivals-title-text {
-  font-size: 38px; 
+  font-size: 2.375rem; 
   font-weight: 700;
 }
 
-#arrivals-big-text { font-size: 36px; }
+#arrivals-big-text { font-size: 2.25rem; }
 
-.arrivals-small-text { font-size: 18px; }
+.arrivals-small-text { font-size: 1.125rem; }
 
-.arrivals-medium-text { font-size: 24px; }
+.arrivals-medium-text { font-size: 1.5rem; }
 
 #arrivals-habits-info, #arrivals-additional-info { gap: 16px; }
 
 .arrivals-row-container { column-gap: 10px; }
+/* arrivals section end */
+
+/* shop section */
+#shop-button {
+  color: white; 
+  background-color: rgb(1, 199, 1); 
+  padding: 8px 12px;
+  border: 0px;
+}
+
+#shop-button, #shop-button:hover { border-radius: 16px; }
+
+#shop-button:hover {
+  color: rgb(255, 255, 255); 
+  background-color: rgb(17, 146, 17); 
+  text-decoration: underline;
+}
 
 #shop-section {
   background-color: rgb(235, 255, 255);
-  padding-top: 64px;
-  padding-bottom: 64px;
 }
 
-#shop-header-small-text {
-  font-size: 42px;
-}
+#shop-header-small-text { font-size: 2.25rem; }
 
 #shop-header-large-text {
-  font-size: 80px; 
+  font-size: 4rem; 
   color: green;
 }
 
 #shop-subheader-container {
-  padding-top: 32px;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 1.125rem;
 }
 
 #shop-items-container {
-  padding-top: 32px;
-  justify-content: space-between;
+  justify-content: space-around;
+  row-gap: 16px;
+  column-gap: 16px;
+  padding-top: 16px;
 }
 
 .shop-item {
-  width: 27%;
-  height: 320px;
+  width: 40%;
+  height: 220px;
   border: 1px solid rgb(187, 54, 54);
   border-radius: 16px;
   background-color: #a6ffe9;
   box-shadow: 11px 15px #70ffdb;
 }
 
-.shop-item-inner {
-  padding: 12px;
-}
+.shop-item-inner { padding: 12px; }
 
 .shop-item-img {
-  width: 100%; border-radius: 16px; height: 250px;
+  width: 100%;
+  border-radius: 16px;
+  height: 165px;
 }
 
 .shop-item-text-container {
-  padding-top: 12px; justify-content: space-between;
+  padding-top: 12px;
+  justify-content: space-between;
 }
 
-.shop-item-text {
-  font-size: 18px;
+.shop-item-text { font-size: 1.125rem; }
+/* shop section end */
+
+/* care section */
+#care-section {
+  padding-bottom: 32px;
+  background: linear-gradient(180deg, rgb(196, 226, 255) 70%, rgb(235, 249, 255) 30%);
+  padding-left: 100px;
+  padding-right: 32px;
+}
+
+#care-header-container { height: 72%; }
+
+#care-header-text-container { align-items: end; }
+
+#care-header-text {
+  font-size: 4.875rem;
+  letter-spacing: 2px; 
+}
+
+#care-header-img-container {
+  margin-left: auto;
+  display: block; 
+}
+
+#care-img { height: 500px; }
+
+#care-info-container { justify-content: space-between; }
+
+#care-plant-care {
+  font-size: 4.875rem;
+  width: 35%;
+}
+
+.care-detailed-info-container {
+  width: 40%;
+  align-items: center;
+  text-align: center;
+}
+
+.care-detailed-info-header {
+  font-size: 1.125rem;
+  padding-top: 4px;
+}
+
+.care-detailed-info-text {
+  padding-top: 12px;
+  font-size: 1rem;
+}
+/* care section end */
+
+
+/* desktop devices */
+@media (min-width: 1024px) {
+  header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer {
+    padding: 32px 100px;
+  }
+
+  #header-text-container {
+    padding-top: 64px;
+    width: 40%;
+    row-gap: 16px;
+  }
+
+  #header-small-text { font-size: 1.5rem; }
+
+  #header-big-text {
+    font-size: 4.875rem;
+    width: 30%;
+  }
+
+  #header-medium-text {
+    font-size: 2.625rem;
+  }
+
+  li a {
+    padding-left: 36px;
+  }
+
+  #tips-text-container { width: 40%; }
+
+  #tips-section {
+    justify-content: center;
+  }
+
+  #quote-section {
+    justify-content: center;
+  }
+
+  #quote-text-container { width: 50%; }
+
+  #arrivals-section {
+    padding: 84px 136px;
+  }
+
+  #arrivals-info {
+    transform: translateY(1px);
+  }
+
+  .shop-item {
+    width: 27%;
+    box-shadow: 11px 15px #70ffdb;
+  }
+
+  #shop-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  #shop-items-container {
+    padding-top: 32px;
+  }
+
+  #shop-header-small-text { font-size: 2,625rem; }
+
+  #shop-header-large-text {
+    font-size: 5rem; 
+  }
+
+  #shop-subheader-container {
+    padding-top: 32px;
+    font-size: 1.25rem;
+  }
+
+  .shop-item {
+    width: 31%;
+    height: 320px;
+  }
+
+  .shop-item-img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .care-detailed-info-container {
+    width: 20%;
+    padding-top: 36px;
+  }
 }
 
 #bedroom-section {
@@ -239,110 +384,71 @@ nav {
 }
 
 #bedroom-text-container {
-  width: 40%; height: 100%;
+  width: 40%;
+  height: 100%;
 }
 
 #bedroom-img-container {
-  width: 60%; height: 100%;
+  width: 60%;
+  height: 100%;
 }
 
 #bedroom-big-text {
-  font-size: 72px; padding-top: 50%;
+  font-size: 4.5rem;
+  padding-top: 50%;
 }
 
 #bedroom-small-text {
-  font-size: 24px; padding-top: 24px;
+  font-size: 1.5rem;
+  padding-top: 24px;
 }
 
 #bedroom-first-image-container {
-  width: 35%; padding-top: 5%; z-index: 2;
+  width: 35%;
+  padding-top: 5%;
+  z-index: 2;
 }
 
 #bedroom-second-image-container {
-  width: 30%; padding-top: 30%; margin-left: -130px; z-index: 1;
+  width: 30%;
+  padding-top: 30%;
+  margin-left: -130px;
+  z-index: 1;
 }
 
 #bedroom-third-image-container {
-  width: 50%; padding-top: 75%; margin-left: 90px; z-index: 3;
+  width: 50%;
+  padding-top: 75%;
+  z-index: 3;
 }
 
 #bedroom-first-img, #bedroom-third-img {
-  width: 80%; border-radius: 16px;
+  width: 80%;
+  border-radius: 16px;
 }
 
 #bedroom-second-img {
-  width: 200%; height: 90%; border-radius: 16px;
+  width: 200%;
+  height: 90%;
+  border-radius: 16px;
 }
 
-footer {
-  background-color: black;
-}
+footer { background-color: black; }
 
 #footer-divider {
-  width: 30%; border: 1px dashed white; margin: auto;
+  width: 30%;
+  border: 1px dashed white;
+  margin: auto;
 }
 
 #footer-text-container {
-  justify-content: space-evenly; padding-top: 24px; text-align: center;
+  justify-content: space-evenly;
+  padding-top: 24px;
+  text-align: center;
 }
 
 .footer-text {
-  text-decoration: none; font-size: 24px; color: wheat;
-}
-
-#care-section {
-  padding-bottom: 32px;
-  background: linear-gradient(180deg, rgb(196, 226, 255) 70%, rgb(235, 249, 255) 30%);
-  padding-left: 100px;
-  padding-right: 32px;
-}
-
-#care-header-container {
-  height: 72%;
-}
-
-#care-header-text-container {
-  align-items:end;
-}
-
-#care-header-text {
-  font-size: 78px; letter-spacing: 2px; 
-}
-
-#care-header-img-container {
-  margin-left: auto; display: block; 
-}
-
-#care-img {
-  height: 500px;
-}
-
-#care-info-container {
-  justify-content: space-between;
-}
-
-#care-plant-care {
-  font-size: 48px; width: 35%;
-}
-
-.care-detailed-info-container {
-  width: 20%; align-items: center; text-align: center; padding-top: 36px;
-}
-
-.care-detailed-info-header {
-  font-size: 18px; padding-top: 4px;
-}
-
-.care-detailed-info-text {
-  padding-top: 12px; font-size: 16px;
-}
-
-.care-detailed-info-container, #header-text-container, #tips-section, .footer-column-container, #bedroom-text-container,
-.shop-item, #shop-section, #arrivals-habits-info, #arrivals-additional-info, #arrivals-info, #quote-text-container, #quote-section {
-  display: flex; flex-direction: column;
-}
-
-#care-info-container, #header-icons-container, #care-header-container, #care-header-text-container, #footer-text-container, nav, ul,
-#bedroom-section, #bedroom-img-container, .shop-item-text-container, #shop-subheader-container, #shop-items-container, .arrivals-row-container {
-  display: flex; flex-direction: row;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: wheat;
 }

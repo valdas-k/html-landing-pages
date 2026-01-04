@@ -1,11 +1,236 @@
-header {
-  background-image: url(../images/travel/header.png);
-  row-gap: 96px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#header-section, #social-icons-container, #blog-section, #content-second-column, #sales-section, 
+#shop-first-column, footer, #final-section-text-column, header, #content-second-row {
+  display: flex; flex-direction: column; flex-wrap: wrap;
 }
 
+#input-container, #blogs-container, #content-section, #shop-section, #footer-icons-container, #final-section, nav, ul {
+  display: flex; flex-direction: row; flex-wrap: wrap;
+}
+
+header, #content-section, #sales-section, #shop-section, footer, #blog-section {
+  padding: 32px 16px;
+}
+
+nav, #blogs-container, #content-section, #shop-section, #final-section {
+  justify-content: space-between;
+}
+
+nav, #blog-section, #shop-first-column, #shop-section {
+  align-items: center;
+}
+
+nav, input, #header-text, #header-button, #content-sideways-text {
+  letter-spacing: 2px;
+}
+
+.blog-article, .content-image, #shop-first-column, #shop-second-column, .body-button{
+  border-radius: 16px;
+}
+
+/* footer */
+footer {
+  background: linear-gradient(180deg, rgb(234, 209, 255), rgb(207, 153, 255));
+  text-align: center;
+  row-gap: 24px;
+}
+
+#footer-hr {
+  width: 90%;
+  color: #ff3c00;
+  height: 2px;
+  margin: auto;
+}
+
+#footer-text {
+  font-size: 1rem;
+  color: black;
+}
+
+#footer-icons-container {
+  column-gap: 36px;
+  justify-content: center;
+}
+/* footer end */
+
+/* sales section */
+#sales-image {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+
+#sales-background {
+  background-color: black;
+  margin-top: -5px;
+  border-radius: 0px 0px 16px 16px;
+}
+
+#sales-text {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 8px;
+  color: white;
+  padding: 24px;
+}
+/* sales section end */
+
+/* final section */
+#final-section {
+  background-color: beige;
+  text-align: left;
+}
+
+#final-section-text-column {
+  width: 48%;
+  row-gap: 24px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  padding-right: 16px;
+}
+
+#final-section-img {
+  width: 48%;
+  height: auto;
+}
+/* final section end */
+
+/* text */
+.text {
+  font-size: 1.125rem;
+  color: black;
+}
+
+#header-text {
+  padding-top: 64px;
+  width: 66%;
+  color: white;
+}
+
+.header-text {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+/* text end */
+
+/* inputs */
+.body-button {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  padding: 12px 32px 12px 32px;
+}
+/* inputs end */
+
+/* shop section */
+#shop-section {
+  background: linear-gradient(90deg, rgb(253, 220, 220) 40%, rgb(255, 171, 171) 65%, rgb(253, 97, 97));
+}
+
+#shop-first-column {
+  width: 46%;
+  padding: 12px 8px 0px 8px; 
+  background-color: rgb(190, 224, 253);
+  text-align: center;
+  row-gap: 24px;
+}
+
+#shop-second-column {
+  background: linear-gradient(90deg, rgba(253, 97, 97, 0.1) 60%, rgba(253, 97, 97, 0.9)),
+              url(../images/travel/shop.png);
+  width: 46%;
+  height: 100%;
+  background-size: cover;
+}
+/* shop section end */
+
+/* content section */
+#content-sideways-text {
+  font-size: 6.75rem;
+  writing-mode: vertical-rl;
+  color: white;
+  margin-top: -50%;
+}
+
+.content-image {
+  height: 100%;
+  width: 100%;
+}
+
+#content-first-column {
+  width: 55%;
+  display: none;
+}
+
+#content-second-column {
+  width: 100%;
+  height: 100%;
+}
+
+#content-first-row {
+  height: 46%;
+}
+
+#content-second-row {
+  padding: 24px 24px 0px 24px;
+  row-gap: 24px;
+}
+
+#content-header-text {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+#content-text {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+/* content section end */
+
+/* blog section */
+#blog-section {
+  text-align: center;
+  row-gap: 16px;
+}
+
+#blog-header-text {
+  letter-spacing: 3px;
+  font-size: 2.5rem
+}
+
+#blogs-container {
+  text-align: left;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  row-gap: 16px;
+  align-content: center;
+  justify-content: center;
+}
+
+.blog-article {
+  width: 40%;
+  border: 1px solid #41fc70;
+}
+
+.blog-image {
+  width: 100%;
+  height: 175px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.blog-text {
+  padding: 16px;
+  background-color: #fffd7a;
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -5px;
+  font-size: 1.125rem;
+}
+/* blog section end */
+
+/* nav */
 ul {
   list-style: none;
   margin: 0;
@@ -17,9 +242,19 @@ li a {
   display: block;
   color: black;
   padding-right: 0px;
-  padding-left: 32px;
-  font-size: 16px;
+  padding-left: 16px;
+  font-size: 1rem;
   text-decoration: none;
+}
+/* nav end */
+
+/* header section */
+header {
+  background-image: url(../images/travel/header.png);
+  row-gap: 96px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 input {
@@ -38,22 +273,16 @@ input {
 
 #social-icons-container {
   padding-top: 32px;
-  width:100%;
-  align-items: end;
+  width: 100%;
+  align-items: start;
   row-gap: 16px;
-  margin-left: 8%;
 }
 
 #header-title-text {
-  text-align: center;
-  font-size: 72px;
+  text-align: right;
+  font-size: 4rem;
   color: #514b48;
   letter-spacing: 32px;
-}
-
-#header-text {
-  padding-top: 64px;
-  width: 30%;
 }
 
 #input-container {
@@ -77,116 +306,6 @@ input {
   flex: 1.25;
 }
 
-#blog-section {
-  text-align: center;
-  row-gap: 64px;
-}
-
-#blog-header-text {
-  letter-spacing: 3px;
-  font-size: 40px
-}
-
-#blogs-container {
-  text-align: left;
-  flex-wrap: wrap;
-}
-
-.blog-article {
-  width: 31%; border: 1px solid #41fc70; box-shadow: 16px 16px rgb(176, 255, 169);
-}
-
-.blog-image {
-  width: 100%; height: 225px; border-radius: 16px 16px 0px 0px;
-}
-
-.blog-text {
-  padding: 16px; background-color: #fffd7a; border-radius: 0px 0px 16px 16px; margin-top: -5px; font-size: 18px;
-}
-
-#content-section {
-  height: 900px;
-}
-
-#content-sideways-text {
-  font-size: 108px; writing-mode: vertical-rl; color: white; margin-top: -50%;
-}
-
-.content-image {
-  height: 100%; width: 100%;
-}
-
-#content-first-column {
-  width: 55%;
-}
-
-#content-second-column {
-  width: 41%; 
-}
-
-#content-first-row {
-  height: 46%;
-}
-
-#content-second-row {
-  height: 52%;
-  padding: 24px;
-}
-
-#content-header-text {
-  font-size: 36px; font-weight: 700; letter-spacing: 5px;
-}
-
-#content-small-padding {
-  padding-top: 16px;
-}
-
-#content-big-padding {
-  padding-top: 36px;
-}
-
-#content-text {
-  font-size: 19px; line-height: 1.5;
-}
-
-#sales-image {
-  width: 100%; border-radius: 16px 16px 0px 0px;
-}
-
-#sales-background {
-  background-color: black; margin-top: -5px; border-radius: 0px 0px 16px 16px;
-}
-
-#sales-text {
-  font-size: 34px; text-align: center; letter-spacing: 10px; color: white; padding: 36px;
-}
-
-#shop-section {
-  background: linear-gradient(90deg, rgb(253, 220, 220) 40%, rgb(255, 171, 171) 65%, rgb(253, 97, 97));
-}
-
-#shop-first-column {
-  width: 46%; padding: 48px 16px 48px 16px; 
-  box-shadow: 24px -24px rgb(255, 196, 86), -24px 24px #fffd7a; background-color: rgb(190, 224, 253);
-  text-align: center;
-}
-
-.header-text {
-  font-size: 40px; font-weight: 700; letter-spacing: 5px; ;
-}
-
-.text {
-  font-size: 24px; color: black; padding-top: 24px; padding-bottom: 24px;
-}
-
-#shop-second-column {
-  background: linear-gradient(90deg, rgba(253, 97, 97, 0.1) 60%, rgba(253, 97, 97, 0.9)),
-              url(../images/travel/shop.png);
-  width: 46%;
-  height: 100%;
-  background-size: cover;
-}
-
 #header-button {
   height: 48px;
   border: none;
@@ -196,83 +315,110 @@ input {
   cursor: pointer;
   flex: 1.75;
 }
+/* header section end */
 
-.body-button {
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  width: 200px;
-  padding: 12px 32px 12px 32px;
-}
+/* desktop devices */
+@media (min-width: 1024px) {
+  header, #content-section, #sales-section, #shop-section, footer, #blog-section {
+    padding: 64px 100px;
+  }
 
-footer {
-  background: linear-gradient(180deg, rgb(234, 209, 255), rgb(207, 153, 255));
-  text-align: center;
-}
+  footer {
+    row-gap: 32px;
+  }
 
-#footer-hr {
-  width: 90%;
-  color: #ff3c00;
-  height: 2px;
-  margin: auto;
-}
+  #footer-text {
+    font-size: 1.5rem;
+  }
 
-#footer-text {
-  font-size: 24px; color: black;
-  padding-bottom: 36px;
-}
+  #sales-text {
+    font-size: 2.125rem;
+    text-align: center;
+    letter-spacing: 10px;
+    color: white;
+    padding: 36px;
+  }
 
-#footer-icons-container {
-  column-gap: 36px;
-  padding-top: 36px;
-  justify-content: center;
-  padding-bottom: 36px;
-}
+  #final-section-img {
+    width: 48%;
+    height: 100%;
+  }
 
-#final-section {
-  background-color: beige;
-  text-align: left;
-  height: 600px;
-}
+  #final-section-text-column {
+    width: 48%;
+    row-gap: 16px;
+    padding-bottom: 64px;
+    padding-top: 64px;
+    padding-right: 64px;
+    justify-content: center;
+  }
+  
+  #header-text {
+    padding-top: 64px;
+    width: 30%;
+    color: white;
+  }
 
-#final-section-text-column {
-  width: 49%;
-  row-gap: 16px;
-  padding-bottom: 64px;
-  padding-top: 64px;
-  padding-right: 64px;
-  justify-content: center;
-}
+  .text {
+    font-size: 1.5rem;
+    color: black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 
-#final-section-img {
-  width: 45%; height: 100%;
-}
+  .header-text {
+    font-size: 2.375rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
 
-#header-section, #social-icons-container, #blog-section, #content-second-column, #sales-section, 
-#shop-first-column, footer, #final-section-text-column, header {
-  display: flex; flex-direction: column;
-}
+  #shop-first-column {
+    padding: 48px 16px 48px 16px; 
+    box-shadow: 24px -24px rgb(255, 196, 86), -24px 24px #fffd7a;
+  }
 
-#input-container, #blogs-container, #content-section, #shop-section, #footer-icons-container, #final-section, nav, ul {
-  display: flex; flex-direction: row;
-}
+  #content-first-column {
+    width: 55%;
+    display: block;
+  }
 
-header, #content-section, #sales-section, #shop-section, footer, #blog-section {
-  padding: 64px 100px;
-}
+  #content-second-column {
+    width: 41%; 
+  }
 
-nav, #blogs-container, #content-section, #shop-section, #final-section {
-  justify-content: space-between;
-}
+  .body-button {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    width: 200px;
+    padding: 12px 32px 12px 32px;
+  }
 
-nav, #blog-section, #shop-first-column, #shop-section {
-  align-items: center;
-}
+  .blog-article {
+    width: 31%;
+    box-shadow: 16px 16px rgb(176, 255, 169);
+  }
 
-nav, input, #header-text, #header-button, #content-sideways-text {
-  letter-spacing: 2px;
-}
+  #blog-section {
+    row-gap: 64px;
+  }
 
-.blog-article, .content-image, #shop-first-column, #shop-second-column, .body-button{
-  border-radius: 16px;
+  .blog-image {
+    height: 225px;
+  }
+
+  li a {
+    padding-left: 32px;
+  }
+
+  #social-icons-container {
+    align-items: end;
+    margin-left: 8%;
+  }
+
+  #header-title-text {
+    font-size: 4.5rem;
+    text-align: center;
+  }
 }
+/* desktop devices end */
