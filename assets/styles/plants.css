@@ -1,9 +1,9 @@
-.care-detailed-info-container, #header-text-container, #tips-section, .footer-column-container, #bedroom-text-container,
+.care-detailed-info-container, #header-text-container, #tips-section, .footer-column-container, #bedroom-text-container, footer, #care-container
 .shop-item, #shop-section, #arrivals-habits-info, #arrivals-additional-info, #arrivals-info, #quote-text-container, #quote-section {
   display: flex; flex-direction: column; flex-wrap: wrap;
 }
 
-#care-info-container, #header-icons-container, #care-header-container, #care-header-text-container, #footer-text-container, nav, ul,
+#care-info-container, #header-icons-container, #footer-text-container, nav, ul, #care-section, #care-header-img-container,
 #bedroom-section, #bedroom-img-container, .shop-item-text-container, #shop-subheader-container, #shop-items-container, .arrivals-row-container {
   display: flex; flex-direction: row; flex-wrap: wrap;
 }
@@ -16,13 +16,11 @@ header { background-image: url(../images/plants/header.png); }
   background-position: center;
 }
 
-header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer {
+header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, footer, #care-section {
   padding: 32px 16px;
 }
 
-header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, #care-section {
-  height: 700px;
-}
+header, #tips-section, #shop-section, #quote-section, #bedroom-section, #arrivals-section, #care-section { height: 700px; }
 
 /* header */
 #header-text-container {
@@ -86,8 +84,8 @@ nav {
 /* tips section */
 #tips-section {
   background-image:url(../images/plants/quote.png);
-  padding-top: 50%;
   align-items: start;
+  justify-content: center;
 }
 
 #tips-text-container { width: 100%; text-align: right;}
@@ -241,37 +239,36 @@ nav {
 
 /* care section */
 #care-section {
-  padding-bottom: 32px;
   background: linear-gradient(180deg, rgb(196, 226, 255) 70%, rgb(235, 249, 255) 30%);
-  padding-left: 100px;
-  padding-right: 32px;
 }
 
-#care-header-container { height: 72%; }
-
-#care-header-text-container { align-items: end; }
-
 #care-header-text {
-  font-size: 4.875rem;
-  letter-spacing: 2px; 
+  font-size: 3rem;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+#care-container {
+  width: 100%;
 }
 
 #care-header-img-container {
-  margin-left: auto;
-  display: block; 
+  justify-content: center;
 }
 
-#care-img { height: 500px; }
+#care-img { height: 400px; width: 80%;}
 
-#care-info-container { justify-content: space-between; }
+#care-info-container { justify-content: space-between;}
 
 #care-plant-care {
   font-size: 4.875rem;
   width: 35%;
+  text-align: center;
 }
 
 .care-detailed-info-container {
-  width: 40%;
+  width: 30%;
   align-items: center;
   text-align: center;
 }
@@ -287,6 +284,81 @@ nav {
 }
 /* care section end */
 
+/* bedroom section */
+#bedroom-section {
+  background-color: rgb(181, 255, 166); row-gap: 24px;
+}
+
+#bedroom-text-container {
+  width: 100%;
+}
+
+#bedroom-img-container {
+  width: 100%;
+  justify-content: end;
+}
+
+#bedroom-big-text {
+  font-size: 4.5rem;
+}
+
+#bedroom-small-text {
+  font-size: 1.5rem;
+  padding-top: 24px;
+}
+
+#bedroom-first-image-container {
+  width: 35%;
+  padding-top: 5%;
+  z-index: 2;
+  display: none;
+}
+
+#bedroom-second-image-container {
+  width: 30%;
+  padding-top: 30%;
+  margin-left: -130px;
+  z-index: 1;
+  display: none;
+}
+
+#bedroom-third-image-container {
+  width: 100%;
+  z-index: 3;
+}
+
+#bedroom-first-img, #bedroom-third-img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+#bedroom-second-img {
+  width: 200%;
+  height: 90%;
+  border-radius: 16px;
+}
+/* bedroom section end */
+
+/* footer */
+footer { background-color: black; row-gap: 24px;}
+
+#footer-divider {
+  width: 50%;
+  border: 1px dashed white;
+  margin: auto;
+}
+
+#footer-text-container {
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.footer-text {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: wheat;
+}
+/* footer end */
 
 /* desktop devices */
 @media (min-width: 1024px) {
@@ -316,14 +388,6 @@ nav {
   }
 
   #tips-text-container { width: 40%; }
-
-  #tips-section {
-    justify-content: center;
-  }
-
-  #quote-section {
-    justify-content: center;
-  }
 
   #quote-text-container { width: 50%; }
 
@@ -371,84 +435,69 @@ nav {
   }
 
   .care-detailed-info-container {
-    width: 20%;
-    padding-top: 36px;
+    width: 30%;
   }
-}
 
-#bedroom-section {
-  padding-left: 100px;
-  padding-right: 0px;
-  padding-top: 0px;
-  background-color: rgb(181, 255, 166);
-}
+  .footer-text {
+    font-size: 1.5rem;
+  }
 
-#bedroom-text-container {
-  width: 40%;
-  height: 100%;
-}
+  #bedroom-first-image-container {
+    display: block;
+  }
 
-#bedroom-img-container {
-  width: 60%;
-  height: 100%;
-}
+  #bedroom-second-image-container {
+    display: block;
+  }
 
-#bedroom-big-text {
-  font-size: 4.5rem;
-  padding-top: 50%;
-}
+  #bedroom-section {
+    align-items: center;
+  }
 
-#bedroom-small-text {
-  font-size: 1.5rem;
-  padding-top: 24px;
-}
+  #bedroom-text-container {
+    width: 39%;
+  }
 
-#bedroom-first-image-container {
-  width: 35%;
-  padding-top: 5%;
-  z-index: 2;
-}
+  #bedroom-img-container {
+    width: 59%;
+  }
 
-#bedroom-second-image-container {
-  width: 30%;
-  padding-top: 30%;
-  margin-left: -130px;
-  z-index: 1;
-}
+  #bedroom-third-image-container {
+    width: 50%;
+    padding-top: 75%;
+  }
+  
+  #bedroom-first-img, #bedroom-third-img {
+    width: 80%;
+  }
 
-#bedroom-third-image-container {
-  width: 50%;
-  padding-top: 75%;
-  z-index: 3;
-}
+  #care-section {
+    padding-bottom: 32px;
+    padding-left: 100px;
+    padding-top: 0px;
+    padding-right: 0px;
+  }
 
-#bedroom-first-img, #bedroom-third-img {
-  width: 80%;
-  border-radius: 16px;
-}
+  #care-header-text {
+    padding-top: 35%;
+    font-size: 4.875rem;
+    width: 40%;
+    text-align: left;
+  }
 
-#bedroom-second-img {
-  width: 200%;
-  height: 90%;
-  border-radius: 16px;
-}
+  #care-info-container { padding-right: 32px; }
+  
+  #care-container {
+    width: 58%;
+  }
 
-footer { background-color: black; }
+  #care-img { height: 500px;}
+  
+  #care-header-img-container {
+    justify-content: end;
+  }
 
-#footer-divider {
-  width: 30%;
-  border: 1px dashed white;
-  margin: auto;
-}
-
-#footer-text-container {
-  justify-content: space-evenly;
-  padding-top: 24px;
-  text-align: center;
-}
-
-.footer-text {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: wheat;
+  .care-detailed-info-container {
+    width: 33%;
+  }
 }
