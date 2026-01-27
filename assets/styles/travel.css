@@ -1,35 +1,32 @@
-#header-section, #social-icons-container, #blog-section, #content-second-column, #sales-section, 
-#shop-first-column, footer, #final-section-text-column, header, #content-second-row {
+#hero-section, #blog-section, #content-second-column, #sales-section, 
+#shop-first-column, footer, #info-section-text-container, header, #content-text-container {
   display: flex; flex-direction: column; flex-wrap: wrap;
 }
 
-#input-container, #blogs-container, #content-section, #shop-section, #footer-icons-container, #final-section, nav, ul {
+#input-container, #blogs-container, #content-section, #hero-icons-container,
+#shop-section, #footer-icons-container, #info-section, nav, ul {
   display: flex; flex-direction: row; flex-wrap: wrap;
 }
 
-header, #content-section, #sales-section, #shop-section, footer, #blog-section {
-  padding: 32px 16px;
-}
+header, footer, section { padding: 32px 16px; }
 
-nav, #blogs-container, #content-section, #shop-section, #final-section {
-  justify-content: space-between;
-}
+nav, #blogs-container, #content-section, #shop-section, #info-section { justify-content: space-between; }
 
-nav, #blog-section, #shop-first-column, #shop-section {
-  align-items: center;
-}
+nav, #blog-section, #shop-first-column, #shop-section { align-items: center; }
 
-nav, input, #header-text, #header-button, #content-sideways-text {
-  letter-spacing: 2px;
-}
+nav, input, .hero-text, #header-button, #content-sideways-text { letter-spacing: 2px; }
 
-.blog-article, .content-image, #shop-first-column, #shop-second-column, .body-button{
-  border-radius: 16px;
-}
+.blog-container, .content-image, #shop-first-column, #shop-second-column, .body-button{ border-radius: 16px; }
+
+button { text-transform: uppercase; }
+
+button:hover { cursor: pointer; }
+
+#hero-section { padding: 0; }
 
 /* footer */
 footer {
-  background: linear-gradient(180deg, rgb(234, 209, 255), rgb(207, 153, 255));
+  background: linear-gradient(180deg, rgb(255, 209, 228), rgb(255, 153, 216));
   text-align: center;
   row-gap: 24px;
 }
@@ -41,9 +38,10 @@ footer {
   margin: auto;
 }
 
-#footer-text {
+.footer-text {
   font-size: 1rem;
   color: black;
+  text-align: center;
 }
 
 #footer-icons-container {
@@ -55,6 +53,7 @@ footer {
 /* sales section */
 #sales-image {
   width: 100%;
+  height: 350px;
   border-radius: 16px 16px 0px 0px;
 }
 
@@ -70,26 +69,25 @@ footer {
   letter-spacing: 8px;
   color: white;
   padding: 24px;
+  font-weight: 500;
 }
 /* sales section end */
 
-/* final section */
-#final-section {
+/* info section */
+#info-section {
   background-color: beige;
   text-align: left;
 }
 
-#final-section-text-column {
-  width: 48%;
+#info-section-text-container {
+  width: 100%;
   row-gap: 24px;
-  padding-bottom: 32px;
-  padding-top: 32px;
-  padding-right: 16px;
 }
 
-#final-section-img {
+#info-image {
   width: 48%;
   height: auto;
+  display: none;
 }
 /* final section end */
 
@@ -97,9 +95,10 @@ footer {
 .text {
   font-size: 1.125rem;
   color: black;
+  text-align: justify;
 }
 
-#header-text {
+.hero-text {
   padding-top: 64px;
   width: 66%;
   color: white;
@@ -109,6 +108,8 @@ footer {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
 }
 /* text end */
 
@@ -120,16 +121,19 @@ footer {
   width: 100%;
   padding: 12px 32px 12px 32px;
 }
+
+.body-button-container { width: 100%; }
 /* inputs end */
 
 /* shop section */
 #shop-section {
   background: linear-gradient(90deg, rgb(253, 220, 220) 40%, rgb(255, 171, 171) 65%, rgb(253, 97, 97));
+  gap: 24px;
 }
 
 #shop-first-column {
-  width: 46%;
-  padding: 12px 8px 0px 8px; 
+  width: 100%;
+  padding: 24px 12px 24px 12px; 
   background-color: rgb(190, 224, 253);
   text-align: center;
   row-gap: 24px;
@@ -138,13 +142,15 @@ footer {
 #shop-second-column {
   background: linear-gradient(90deg, rgba(253, 97, 97, 0.1) 60%, rgba(253, 97, 97, 0.9)),
               url(../images/travel/shop.png);
-  width: 46%;
+  width: 100%;
   height: 100%;
   background-size: cover;
 }
 /* shop section end */
 
 /* content section */
+#content-section { background-color: azure; }
+
 #content-sideways-text {
   font-size: 6.75rem;
   writing-mode: vertical-rl;
@@ -167,52 +173,45 @@ footer {
   height: 100%;
 }
 
-#content-first-row {
-  height: 46%;
-}
-
-#content-second-row {
+#content-text-container {
   padding: 24px 24px 0px 24px;
   row-gap: 24px;
 }
 
-#content-header-text {
-  font-size: 2.25rem;
+.section-header-text {
+  font-size: 2.125rem;
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #content-text {
   font-size: 1.125rem;
   line-height: 1.5;
+  text-align: justify;
 }
 /* content section end */
 
 /* blog section */
 #blog-section {
   text-align: center;
-  row-gap: 16px;
-}
-
-#blog-header-text {
-  letter-spacing: 3px;
-  font-size: 2.5rem
+  row-gap: 32px;
+  background-color: aliceblue;
 }
 
 #blogs-container {
   text-align: left;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  column-gap: 16px;
-  row-gap: 16px;
+  column-gap: 32px;
+  row-gap: 32px;
   align-content: center;
   justify-content: center;
 }
 
-.blog-article {
-  width: 40%;
+.blog-container {
+  width: 46%;
   border: 1px solid #41fc70;
+  background-color: beige;
 }
 
 .blog-image {
@@ -223,9 +222,6 @@ footer {
 
 .blog-text {
   padding: 16px;
-  background-color: #fffd7a;
-  border-radius: 0px 0px 16px 16px;
-  margin-top: -5px;
   font-size: 1.125rem;
 }
 /* blog section end */
@@ -271,18 +267,19 @@ input {
   letter-spacing: 4px;
 }
 
-#social-icons-container {
-  padding-top: 32px;
-  width: 100%;
-  align-items: start;
-  row-gap: 16px;
+#hero-icons-container {
+  padding-top: 64px;
+  justify-content: center;
+  gap: 24px;
 }
 
-#header-title-text {
+#hero-header-text {
   text-align: right;
   font-size: 4rem;
   color: #514b48;
   letter-spacing: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 #input-container {
@@ -290,21 +287,13 @@ input {
   padding-top: 32px;
 }
 
-.input-divider {
-  color: #8a8a8a;
-}
+.input-divider { color: #8a8a8a; }
 
-#from-input {
-  flex: 2;
-}
+#from-input { flex: 2; }
 
-#to-input {
-  flex: 2.5;
-}
+#to-input { flex: 2.5; }
 
-#since-input, #until-input {
-  flex: 1.25;
-}
+#since-input, #until-input { flex: 1.25; }
 
 #header-button {
   height: 48px;
@@ -312,7 +301,6 @@ input {
   background-color: #ff9226;
   color: #e6ffff;
   font-weight: 900;
-  cursor: pointer;
   flex: 1.75;
 }
 /* header section end */
@@ -323,13 +311,11 @@ input {
     padding: 64px 100px;
   }
 
-  footer {
-    row-gap: 32px;
-  }
+  #info-section { padding: 0; }
 
-  #footer-text {
-    font-size: 1.5rem;
-  }
+  footer { row-gap: 32px; }
+
+  .footer-text { font-size: 1.25rem; }
 
   #sales-text {
     font-size: 2.125rem;
@@ -337,14 +323,16 @@ input {
     letter-spacing: 10px;
     color: white;
     padding: 36px;
+    text-transform: uppercase;
   }
 
-  #final-section-img {
+  #info-image {
     width: 48%;
     height: 100%;
+    display: block;
   }
 
-  #final-section-text-column {
+  #info-section-text-container {
     width: 48%;
     row-gap: 16px;
     padding-bottom: 64px;
@@ -353,7 +341,7 @@ input {
     justify-content: center;
   }
   
-  #header-text {
+  .hero-text {
     padding-top: 64px;
     width: 30%;
     color: white;
@@ -370,11 +358,13 @@ input {
     font-size: 2.375rem;
     font-weight: 700;
     letter-spacing: 5px;
+    text-transform: uppercase;
   }
 
   #shop-first-column {
     padding: 48px 16px 48px 16px; 
     box-shadow: 24px -24px rgb(255, 196, 86), -24px 24px #fffd7a;
+    width: 46%;
   }
 
   #content-first-column {
@@ -382,9 +372,7 @@ input {
     display: block;
   }
 
-  #content-second-column {
-    width: 41%; 
-  }
+  #content-second-column { width: 41%; }
 
   .body-button {
     background-color: black;
@@ -394,31 +382,34 @@ input {
     padding: 12px 32px 12px 32px;
   }
 
-  .blog-article {
+  .blog-container {
     width: 31%;
     box-shadow: 16px 16px rgb(176, 255, 169);
   }
 
-  #blog-section {
-    row-gap: 64px;
-  }
+  #blog-section { row-gap: 64px; }
 
-  .blog-image {
-    height: 225px;
-  }
+  .blog-image { height: 225px; }
 
-  li a {
-    padding-left: 32px;
-  }
+  li a { padding-left: 32px; }
 
-  #social-icons-container {
+  #hero-icons-container {
     align-items: end;
     margin-left: 8%;
+    flex-direction: column;
   }
 
-  #header-title-text {
+  #hero-header-text {
     font-size: 4.5rem;
     text-align: center;
   }
+
+  #content-text-container { padding: 48px 24px; }
+
+  #sales-image { height: 575px; }
+
+  #shop-second-column { width: 46%; }
+
+  #shop-first-column { padding: 12px 8px 12px 8px; }
 }
 /* desktop devices end */
