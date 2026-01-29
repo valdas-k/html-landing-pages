@@ -82,7 +82,7 @@ footer, #video-section { background-color: rgb(112, 69, 79); }
 
 .footer-text {
   font-size: 0.875rem;
-  color: #e7dada;
+  color: #e1e1e1;
 }
 
 .card-text { font-size: 0.875rem; }
@@ -94,21 +94,18 @@ footer, #video-section { background-color: rgb(112, 69, 79); }
 }
 
 /* footer */
-footer {
-  row-gap: 24px;
+footer { gap: 24px; }
+
+.footer-section-container {
+  row-gap: 8px;
+  width: 100%;
+  align-items: start;
+  justify-content: space-between;
   color: aliceblue;
 }
 
-.footer-section-container {
-  row-gap: 12px;
-  width: 100%;
-  align-items: start;
-}
-
 #footer-icons-container {
-  column-width: 30%;
-  column-gap: 8px;
-  justify-content: space-between;
+  column-gap: 16px;
   padding-top: 8px;
 }
 
@@ -116,7 +113,7 @@ footer {
   display: grid;
   grid-template-columns: 75px 200px;
   grid-template-rows: auto auto auto;
-  row-gap: 16px;
+  row-gap: 12px;
   justify-content: center;
   align-content: center;
 }
@@ -290,7 +287,6 @@ nav {
   .larger-text { font-size: 1.125rem; }
 
   footer {
-    column-gap: 24px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

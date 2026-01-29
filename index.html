@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/styles/index.css">
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
         <ul>
           <li>
@@ -30,10 +30,10 @@
       </nav>
     </header>
 
-    <section class="project-description">
+    <section id="project-description">
       <article class="text-container">
         <h1 class="header-text">
-          Html landing pages
+          Project description
         </h1>
         <p class="text">
           This project consists of several web pages, written in ***HTML***, ***CSS*** and ***JavaScript***.
@@ -69,8 +69,7 @@
       </article>
     </section>
 
-    
-    <section class="pages-container">
+    <section id="pages-container">
       <h4 class="header-text">
         Pages
       </h4>
@@ -90,13 +89,36 @@
       </div>
     </section>
 
-    <footer>
-      <h5 class="header-text">
-        More info
-      </h5>
-      <p class="text">
-        https://github.com/valdas-kr
-      </p>
+    <footer id="footer">
+      <details>
+        <summary>Sections</summary>
+        <div class="footer-info">
+          <a href="#header" class="footer-text">Header</a>
+          <a href="#project-description" class="footer-text">Project description</a>
+          <a href="#pages-container" class="footer-text">Pages</a>
+          <a href="#footer" class="footer-text">Footer</a>
+        </div>
+        <hr class="footer-divider">
+      </details>
+      <details>
+        <summary>Pages</summary>
+        <div class="footer-info">
+          <a href="./index.html" class="footer-text">Index</a>
+          <a href="src/travel.html" class="footer-text">Travel</a>
+          <a href="src/plants.html" class="footer-text">Plants</a>
+          <a href="src/blogs.html" class="footer-text">Blogs</a>
+          <a href="src/computers.html" class="footer-text">Computers</a>
+        </div>
+        <hr class="footer-divider">
+      </details>
+      <details>
+        <summary>GitHub</summary>
+        <div class="footer-info">
+          <a href="https://github.com/valdas-kr" class="footer-text">GitHub</a>
+        </div>
+        <hr class="footer-divider">
+      </details>
     </footer>
+    <script src="assets/scripts/openFooter.js"></script>
   </body>
 </html>

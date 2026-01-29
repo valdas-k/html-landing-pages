@@ -1,9 +1,9 @@
-.care-detailed-info-container, #header-text-container, #tips-section, .footer-column-container, #bedroom-text-container, footer, #care-container
+.care-detailed-info-container, #header-text-container, #tips-section, .footer-first-container, .footer-second-container, #bedroom-text-container, #care-container
 .shop-item, #shop-section, #arrivals-habits-info, #arrivals-additional-info, #arrivals-info, #quote-text-container, #quote-section {
   display: flex; flex-direction: column; flex-wrap: wrap;
 }
 
-#care-info-container, #header-icons-container, #footer-text-container, nav, ul, #care-section, #care-header-img-container,
+#care-info-container, #header-icons-container, nav, ul, #care-section, #care-header-img-container, footer,
 #bedroom-section, #bedroom-img-container, .shop-item-text-container, #shop-subheader-container, #shop-items-container, .arrivals-row-container {
   display: flex; flex-direction: row; flex-wrap: wrap;
 }
@@ -330,21 +330,25 @@ footer {
   row-gap: 24px;
 }
 
-#footer-divider {
-  width: 50%;
-  border: 1px dashed white;
-  margin: auto;
+.footer-first-container {
+  text-align: left;
+  width: 49%;
 }
 
-#footer-text-container {
-  justify-content: space-evenly;
-  text-align: center;
+.footer-second-container {
+  text-align: right;
+  width: 49%;
 }
 
 .footer-text {
   text-decoration: none;
   font-size: 1.25rem;
-  color: wheat;
+  color: rgb(181, 255, 166);
+}
+
+.footer-text:hover {
+  text-decoration: underline;
+  color: rgb(153, 255, 132);
 }
 
 /* desktop devices */

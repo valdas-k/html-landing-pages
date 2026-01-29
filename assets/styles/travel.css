@@ -1,4 +1,4 @@
-#hero-section, #blog-section, #content-second-container, #sales-section, 
+#hero-section, #blog-section, #content-second-container, #sales-section, .footer-text-container,
 #shop-first-container, footer, #info-section-text-container, header, #content-text-container {
   display: flex; flex-direction: column; flex-wrap: wrap;
 }
@@ -27,19 +27,27 @@ button:hover { cursor: pointer; }
 /* footer */
 footer {
   background: linear-gradient(180deg, rgb(255, 209, 228), rgb(255, 153, 216));
-  align-items: center;
+  align-items: left;
   row-gap: 24px;
 }
 
-#footer-hr {
+.footer-text-container { gap: 8px; }
+
+.footer-divider {
   width: 90%;
-  color: #ff3c00;
+  color: #d739ff;
   height: 2px;
   margin: auto;
 }
 
 .footer-text {
   font-size: 1rem;
+  color: rgb(49, 49, 49);
+  text-decoration: none;
+}
+
+.footer-text:hover {
+  text-decoration: underline;
   color: black;
 }
 
@@ -305,7 +313,10 @@ input {
 
   #info-section { padding: 0; }
 
-  footer { row-gap: 32px; }
+  footer { 
+    row-gap: 32px;
+    align-items: center;
+  }
 
   .footer-text, .shop-text { font-size: 1.25rem; }
 
@@ -396,4 +407,11 @@ input {
   #sales-image { height: 575px; }
 
   #shop-second-container { width: 46%; }
+
+  .footer-text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
 }

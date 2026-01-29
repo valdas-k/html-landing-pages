@@ -6,19 +6,15 @@ header {
   background-color: rgb(208, 233, 255);
 }
 
-.project-description {
+#project-description {
   display: flex;
   flex-direction: column;
   gap: 24px;
   background-color: rgb(153, 252, 252);
 }
 
-.pages-container {
+#pages-container {
   background-color: rgb(143, 255, 218);
-}
-
-footer {
-  background-color: rgb(255, 255, 216);
 }
 
 .index-image {
@@ -43,9 +39,87 @@ footer {
   padding-bottom: 8px;
 }
 
+/* footer */
+.footer-info {
+  padding: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+summary {
+  font-size: 1.125rem;
+  color: black;
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  background: url(../icons/blogs/search.svg) no-repeat center;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  content: "";
+  display: inline-block;
+  padding-left: 16px;
+}
+
+details[open] summary::after {
+  background: url(../icons/blogs/message.svg) no-repeat center;
+}
+
+.footer-info a {
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: rgb(255, 255, 216);
+  text-align: center;
+}
+
+.footer-divider {
+  margin: auto;
+  color: orange;
+  width: 300px;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+/* desktop devices */
 @media (min-width: 1024px) {
   .index-image {
     width: 325px;
     height: 250px;
+  }
+
+  summary {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  details[open] summary::after {
+    display: none;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .footer-divider {
+    display: none;
   }
 }
