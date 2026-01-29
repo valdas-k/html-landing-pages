@@ -1,3 +1,26 @@
+section, header, footer {
+  padding: 32px;
+}
+
+header {
+  background-color: rgb(208, 233, 255);
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: rgb(153, 252, 252);
+}
+
+.pages-container {
+  background-color: rgb(143, 255, 218);
+}
+
+footer {
+  background-color: rgb(255, 255, 216);
+}
+
 .index-image {
   width: 200px;
   height: 150px;
@@ -9,12 +32,16 @@
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 16px;
-  padding: 32px;
   justify-content: center;
   align-items: center;
 }
 
-body { background-color: azure; }
+.header-text {
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
 
 @media (min-width: 1024px) {
   .index-image {
