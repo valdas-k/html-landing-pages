@@ -1,60 +1,83 @@
-section, header, footer {
-  padding: 32px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* text color */
+.footer-info a, header, footer, section {
+  color: rgb(62, 52, 52);
+}
+
+summary, .header-text {
+  color: rgb(32, 31, 31)
+}
+
+/* header */
 header {
   background-color: rgb(208, 233, 255);
 }
 
-#project-description {
+header, section, footer {
+  padding: 32px;
+  line-height: 1.6;
+}
+
+/* nav + links */
+.nav-list {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-  background-color: rgb(153, 252, 252);
-  line-height: 1.5;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 0px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.875rem;
+  list-style-type: none
 }
 
-#pages-container {
-  background-color: rgb(143, 255, 218);
-}
-
-.header-text {
-  color: black;
-  font-size: 2rem;
-  font-weight: 600;
-  padding-bottom: 8px;
-}
-
-#links-list {
-  padding-left: 22px;
-}
-
-#links-list a {
+a {
   text-decoration: none;
   color: rgb(73, 73, 73);
 }
 
-#links-list a:hover {
+a:hover {
   text-decoration: underline;
   color: rgb(0, 0, 0);
 }
 
-#links-list li::marker {
-  content: "🔎";
+/* project info section */
+#project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: rgb(170, 251, 251);
+  font-size: 1.125rem;
 }
 
-/* text */
-.bold-italic-text {
-  font-weight: 800;
-  font-style: italic;
+.header-text {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.italic-text {
-  font-style: italic;
+#links-list {
+  padding: 8px 0px 0px 16px;
+  list-style-type: square;
 }
 
-/* images */
+/* pages links section */
+#page-links {
+  background-color: rgb(143, 255, 218);
+}
+
 #index-image-container {
+  padding-top: 8px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -71,11 +94,12 @@ header {
 }
 
 #travel-image, #plants-image, #blogs-image, #computers-image {
-  width: 200px;
-  height: 150px;
+  width: 100%;
+  height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 16px;
 }
 
 #travel-image {
@@ -163,15 +187,16 @@ header {
 }
 
 /* footer */
-.footer-info {
-  padding: 16px 0px;
+footer {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 24px;
+  background-color: rgb(255, 255, 216);
+  text-align: center;
 }
 
 summary {
-  font-size: 1.125rem;
+  font-size: 1.625rem;
   color: black;
   list-style: none;
   cursor: pointer;
@@ -195,17 +220,21 @@ details[open] summary::after {
   background: url(../icons/blogs/message.svg) no-repeat center;
 }
 
-.footer-info a {
-  text-decoration: none;
-  color: rgb(85, 85, 85);
-}
-
-#footer {
+.footer-info {
+  padding: 16px 0px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  background-color: rgb(255, 255, 216);
-  text-align: center;
+  gap: 16px;
+  font-size: 1.25rem;
+}
+
+.footer-info a {
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .footer-divider {
@@ -214,16 +243,27 @@ details[open] summary::after {
   width: 300px;
 }
 
-.footer-info a:hover {
-  text-decoration: underline;
-  color: black;
-}
+/* tablet devices */
+@media (min-width: 768px) {
+  .header-text {
+    font-size: 2.125rem;
+  }
 
-/* desktop devices */
-@media (min-width: 1024px) {
+  #project-info {
+    gap: 24px;
+    font-size: 1.25rem;
+  }
+
   #travel-image, #plants-image, #blogs-image, #computers-image {
-    width: 325px;
-    height: 250px;
+    width: 48%;
+    height: 350px;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 96px;
   }
 
   summary {
@@ -235,14 +275,15 @@ details[open] summary::after {
     display: none;
   }
 
-  #footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 48px;
-  }
-
   .footer-divider {
     display: none;
+  }
+}
+
+/* desktop devices */
+@media (min-width: 1024px) {
+  #travel-image, #plants-image, #blogs-image, #computers-image {
+    width: 32%;
+    height: 250px;
   }
 }

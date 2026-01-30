@@ -328,6 +328,7 @@ nav {
 footer {
   background-color: black;
   row-gap: 24px;
+  justify-content: space-between;
 }
 
 .footer-first-container {

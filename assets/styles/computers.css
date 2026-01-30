@@ -14,7 +14,7 @@
 }
 
 /* justify content */
-#video-section, #staff-section, #qualities-section, #partners-section, footer, .text-container, nav {
+#video-section, #staff-section, #qualities-section, #partners-section, footer, nav {
   justify-content: space-between;
 }
 
@@ -122,6 +122,7 @@ footer { gap: 24px; }
   width: 100%;
   row-gap: 24px;
   color: azure;
+  justify-content: center;
 }
 
 /* partners section */
@@ -146,7 +147,9 @@ footer { gap: 24px; }
   height: 350px;
 }
 
-#partners-section, #video-section { row-gap: 16px; }
+#partners-section { row-gap: 16px; }
+
+#video-section { gap: 32px; }
 
 #video-button {
   background-color: rgb(149, 183, 255);

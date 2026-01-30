@@ -4,70 +4,52 @@
     <title>Start page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="stylesheet" href="assets/styles/index.css">
   </head>
   <body>
     <header id="header">
       <nav>
-        <ul>
-          <li>
-            Index
-          </li>
-          <li>
-            Travel
-          </li>
-          <li>
-            Plants
-          </li>
-          <li>
-            Blogs
-          </li>
-          <li>
-            Computers
-          </li>
+        <ul class="nav-list">
+          <li><a href="./index.html">Index</a></li>
+          <li><a href="src/travel.html">Travel</a></li>
+          <li><a href="src/plants.html">Plants</a></li>
+          <li><a href="src/blogs.html">Blogs</a></li>
+          <li><a href="src/computers.html">Computers</a></li> 
         </ul>
       </nav>
     </header>
 
-    <section id="project-description">
-      <article class="text-container">
-        <h1 class="header-text">
-          Project description
-        </h1>
-        <p class="text">
-          This project consists of several web pages, written in <span class="bold-italic-text">HTML</span>, 
-          <span class="bold-italic-text">CSS</span> and <span class="bold-italic-text">JavaScript</span>.
-          All pages cover different topics, such as blogs, computers, plants and travel. These themes are reflected in page design, colors and style. All pages are optimised for different screen resolutions and sizes.
+    <section id="project-info">
+      <article>
+        <h1 class="header-text">Project description</h1>
+        <p>
+          This project consists of several web pages, written in <strong><em>HTML</em></strong>, <strong><em>CSS</em></strong> and 
+          <strong><em>JavaScript</em></strong>.
+          <br>All pages cover different topics, such as blogs, computers, plants and travel. These themes are reflected
+          in page design, colors and style. All pages are optimised for different screen resolutions and sizes.
         </p>
       </article>
-      <article class="index-text-container">
-        <h2 class="header-text">
-          Assets used
-        </h2>
-        <p class="text">
+      <article>
+        <h2 class="header-text">Assets used</h2>
+        <p>
          Pictures, icons and other types of assets were used to develop these web pages:
         </p>
         <ul id="links-list">
-          <li><span class="italic-text">Logos</span> - <a href="https://looka.com/">looka</a></li>
-          <li><span class="italic-text">Icons</span> - <a href="https://icon-icons.com/">icon-icons</a></li>
-          <li><span class="italic-text">Images</span> - <a href="https://pixabay.com/">pixabay</a></li>
+          <li>Logos - <em><a href="https://looka.com/">looka</a></em></li>
+          <li>Icons - <em><a href="https://icon-icons.com/">icon-icons</a></em></li>
+          <li>Images - <em><a href="https://pixabay.com/">pixabay</a></em></li>
         </ul>
       </article>
-      <article class="index-text-container">
-        <h3 class="header-text">
-          Licence
-        </h3>
-        <p class="text">
-          This project uses <span class="italic-text">GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3)</span>. 
+      <article>
+        <h3 class="header-text">Licence</h3>
+        <p>
+          This project uses <em>GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3)</em>. 
         </p>
       </article>
     </section>
 
-    <section id="pages-container">
-      <h4 class="header-text">
-        Pages
-      </h4>
+    <section id="page-links">
+      <h4 class="header-text">Pages</h4>
       <div id="index-image-container">
         <a href="src/travel.html" id="travel-image">
           <div id="travel-overlay">
@@ -97,8 +79,8 @@
         <summary>Sections</summary>
         <div class="footer-info">
           <a href="#header" class="footer-text">Header</a>
-          <a href="#project-description" class="footer-text">Project description</a>
-          <a href="#pages-container" class="footer-text">Pages</a>
+          <a href="#project-info" class="footer-text">Project description</a>
+          <a href="#page-links" class="footer-text">Pages</a>
           <a href="#footer" class="footer-text">Footer</a>
         </div>
         <hr class="footer-divider">
