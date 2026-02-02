@@ -5,27 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles/blogs.css">
-    <link rel="stylesheet" href="../assets/styles/styles.css">
   </head>
   <body>
-    <header>
+    <header id="blogs-header">
       <a href="../index.html"><img src="../assets/icons/logos/blog_logo.svg" class="logo" alt="Website logo with website name"></a>
     </header>
-
-    <nav>
+    <nav id="blogs-nav">
       <ul>
         <li><a href="../src/travel.html">Travel</a></li>
         <li><a href="../src/plants.html">Plants</a></li>
         <li><a href="../src/blogs.html">Blogs</a></li>
         <li><a href="../src/computers.html">Computers</a></li>
-        <li>
+        <li id="search-list-item">
           <img inert src="../assets/icons/blogs/search.svg" id="search-icon">
           <input type="text" class="search-input" name="search" placeholder="Search">
         </li>
       </ul>
     </nav>
 
-    <section id="top-blogs-section">
+    <section id="top-blogs">
       <article id="top-blogs-first-blog">
         <div class="top-blogs-text-container">
           <p class="top-blogs-title-text">Your title</p>
@@ -46,102 +44,84 @@
       </article>
     </section>
 
-    <div id="content-container">
-      <div id="article-container">
-        <h1 id="content-container-header">Features</h1>
+    <div id="blogs-content">
+      <section id="featured-articles">
+        <h1 id="featured-articles-title-text">Features</h1>
         <article class="featured-article">
-          <img src="../assets/images/blogs/blog_4.png" class="featured-article-img" alt="">
+          <img src="../assets/images/blogs/blog_4.png" class="featured-article-image" alt="Mercedes SLS AMG">
           <p class="featured-article-title-text">Your title here</p>
           <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <div class="featured-article-more-info-container">
-            <a href="#"><button class="more-info-button">Read more</button></a>
-            <div class="more-info-social-icons-container">
-              <a href="#"><img src="../assets/icons/blogs/message.svg" class="social-media-icon" alt=""></a>
-              <a href="#"><button class="more-info-share-button">Share</button></a>
-              <a href="#"><img src="../assets/icons/social/facebook.svg" class="social-media-icon" alt=""></a>
-              <a href="#"><img src="../assets/icons/social/twitter.svg" class="social-media-icon" alt=""></a>
+          <div class="featured-article-more-info">
+            <a href="https://github.com/valdas-kr"><button class="featured-article-button">Read more</button></a>
+            <div class="featured-article-social-icons">
+              <a href="https://github.com/valdas-kr"><img src="../assets/icons/blogs/message.svg" class="social-media-icon" alt="Comments icon"></a>
+              <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/facebook.svg" class="social-media-icon" alt="Facebook icon"></a>
+              <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/twitter.svg" class="social-media-icon" alt="Twitter icon"></a>
             </div>
           </div>
         </article>
-
         <hr class="article-divider">
-
         <article class="featured-article">
-          <img src="../assets/images/blogs/blog_5.png" class="featured-article-img" alt="">
+          <img src="../assets/images/blogs/blog_5.png" class="featured-article-image" alt="BMW M3">
           <p class="featured-article-title-text">Your title here</p>
           <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-          <div class="featured-article-more-info-container">
-            <a href="#"><button class="more-info-button">Read more</button></a>
-            <div class="more-info-social-icons-container">
-              <a href="#"><img src="../assets/icons/blogs/message.svg" class="social-media-icon" alt=""></a>
-              <a href="#"><button class="more-info-share-button">Share</button></a>
-              <a href="#"><img src="../assets/icons/social/facebook.svg" class="social-media-icon" alt=""></a>
-              <a href="#"><img src="../assets/icons/social/twitter.svg" class="social-media-icon" alt=""></a>
+          <div class="featured-article-more-info">
+            <a href="https://github.com/valdas-kr"><button class="featured-article-button">Read more</button></a>
+            <div class="featured-article-social-icons">
+              <a href="https://github.com/valdas-kr"><img src="../assets/icons/blogs/message.svg" class="social-media-icon" alt="Comments icon"></a>
+              <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/facebook.svg" class="social-media-icon" alt="Facebook icon"></a>
+              <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/twitter.svg" class="social-media-icon" alt="Twitter icon"></a>
             </div>
           </div>
         </article>
-      </div>
-        
-      <div id="aside-container">
-        <aside>
-          <div id="news-letter">
-            <h2 class="aside-header-text">News Letter</h2>
-            <input type="text" class="search-input" name="aside-text-input" placeholder="Your Email Adress">
-            <a href="#"><button id="aside-button">Sign Up</button></a>
+      </section>
+      <aside id="blogs-aside">
+        <div id="news-letter">
+          <h2 class="aside-header-text">News Letter</h2>
+          <input type="text" class="search-input" name="aside-text-input" placeholder="Your Email Adress">
+          <a href="https://github.com/valdas-kr"><button id="aside-button">Sign Up</button></a>
+        </div>
+        <div id="categories">
+          <h3 class="aside-header-text">Categories</h3>
+          <a class="aside-category" href="https://github.com/valdas-kr">
+            <button class="aside-category-button">Categories (1)</button><hr>
+          </a>
+          <a class="aside-category" href="https://github.com/valdas-kr">
+            <button class="aside-category-button">Categories (2)</button><hr>
+          </a>
+          <a class="aside-category" href="https://github.com/valdas-kr">
+            <button class="aside-category-button">Categories (3)</button><hr>
+          </a>
+          <a class="aside-category" href="https://github.com/valdas-kr">
+            <button class="aside-category-button">Categories (4)</button><hr>
+          </a>
+          <a class="aside-category" href="https://github.com/valdas-kr">
+            <button class="aside-category-button">Categories (5)</button><hr>
+          </a>
+          <a class="aside-category" href="https://github.com/valdas-kr">
+            <button class="aside-category-button">Categories (6)</button><hr>
+          </a>
+          <a class="aside-category" href="https://github.com/valdas-kr">
+            <button class="aside-category-button">Categories (7)</button><hr>
+          </a>
+        </div>
+        <div id="follow">
+          <h4 class="aside-header-text">Follow</h4>
+          <div id="aside-icons">
+            <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/facebook.svg" class="social-media-icon"></a>
+            <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/instagram.svg" class="social-media-icon"></a>
+            <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/pinterest.svg" class="social-media-icon"></a>
+            <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/twitter_2.svg" class="social-media-icon"></a>
           </div>
-
-          <div id="categories">
-            <h3 class="aside-header-text">Categories</h3>
-            <div class="category-container">
-              <a href="#"><button class="aside-category-button">Categories (1)</button></a>
-              <hr>
-            </div>
-            <div class="category-container">
-              <a href="#"><button class="aside-category-button">Categories (2)</button></a>
-              <hr>
-            </div>
-            <div class="category-container">
-              <a href="#"><button class="aside-category-button">Categories (3)</button></a>
-              <hr>
-            </div>
-            <div class="category-container">
-              <a href="#"><button class="aside-category-button">Categories (4)</button></a>
-              <hr>
-            </div>
-            <div class="category-container">
-              <a href="#"><button class="aside-category-button">Categories (5)</button></a>
-              <hr>
-            </div>
-            <div class="category-container">
-              <a href="#"><button class="aside-category-button">Categories (6)</button></a>
-              <hr>
-            </div>
-            <div class="category-container">
-              <a href="#"><button class="aside-category-button">Categories (7)</button></a>
-              <hr>
-            </div>
-          </div>
-
-          <div id="follow">
-            <h4 class="aside-header-text">Follow</h4>
-            <div id="icon-container">
-              <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/facebook.svg" class="big-icon"></a>
-              <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/instagram.svg" class="big-icon"></a>
-              <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/pinterest.svg" class="big-icon"></a>
-              <a href="https://github.com/valdas-kr"><img src="../assets/icons/social/twitter_2.svg" class="big-icon"></a>
-            </div>
-          </div>
-
-          <div id="contact">
-            <h5 class="aside-header-text">Contact Us</h5>
-            <a href="mailto:info@blogsite.com" class="aside-text">info@blogsite.com</a>            
-          </div>
-        </aside>
-      </div>
+        </div>
+        <div id="contact">
+          <h5 class="aside-header-text">Contact Us</h5>
+          <a href="mailto:info@blogsite.com" class="aside-text">info@blogsite.com</a>            
+        </div>
+      </aside>
     </div>
-
-    <footer>
-      <p class="blogs-text">Copyright @Blog company Ltd. All rights reserved.</p>
+    <footer id="blogs-footer">
+      <p class="footer-text">Copyright @Blog company Ltd. All rights reserved.</p>
     </footer>
   </body>
 </html>

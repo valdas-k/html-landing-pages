@@ -1,3 +1,4 @@
+/* body */
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +31,7 @@ body {
 }
 
 /* nav + links */
-.index-nav {
+#index-nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -42,12 +43,12 @@ body {
   list-style-type: none
 }
 
-.index-nav a {
+#index-nav a {
   text-decoration: none;
   color: rgb(73, 73, 73);
 }
 
-.index-nav a:hover {
+#index-nav a:hover {
   text-decoration: underline wavy yellowgreen;
   color: rgb(0, 0, 0);
 }
