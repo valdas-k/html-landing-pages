@@ -218,6 +218,7 @@ footer {
   height: 215px;
   width: 215px;
   border-radius: 8px;
+  cursor: zoom-in;
 }
 
 .content-card {

@@ -225,6 +225,7 @@ nav {
   background-color: rgb(1, 199, 1); 
   padding: 8px 12px;
   border: 0px;
+  cursor: pointer;
 }
 
 #shop-button, #shop-button:hover {
@@ -269,10 +270,16 @@ nav {
   border-radius: 16px;
   background-color: #a6ffe9;
   box-shadow: 11px 15px #70ffdb;
+  text-decoration: none;
+  color: rgb(30, 28, 28);
 }
 
 .shop-item-inner {
-  padding: 12px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .shop-item-img {
@@ -282,7 +289,6 @@ nav {
 }
 
 .shop-item-text-container {
-  padding-top: 12px;
   justify-content: space-between;
 }
 
@@ -502,8 +508,8 @@ footer {
   }
 
   .shop-item {
-    width: 31%;
-    height: 320px;
+    width: 29%;
+    height: 325px;
   }
 
   .shop-item-img {
