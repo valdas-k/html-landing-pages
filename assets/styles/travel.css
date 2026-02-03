@@ -1,3 +1,31 @@
+/* body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.logo {
+  width: 200px;
+  height: 45px;
+}
+
+.social-media-icon {
+  width: 36px;
+  height: 36px;
+}
+
 #hero-section, #blog-section, #content-second-container, #sales-section, .footer-text-container,
 #shop-first-container, footer, #info-section-text-container, header, #content-text-container {
   display: flex;
@@ -242,6 +270,9 @@ footer {
   width: 100%;
   border: 1px solid #41fc70;
   background-color: beige;
+  text-decoration: none;
+  color: #222020;
+  box-shadow: 8px 8px rgb(176, 255, 169);
 }
 
 .blog-image {
@@ -339,6 +370,12 @@ input {
   color: #e6ffff;
   font-weight: 900;
   flex: 1.75;
+}
+
+/* tablet devices */
+@media (min-width: 768px) {
+
+
 }
 
 /* desktop devices */
@@ -469,5 +506,10 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+  }
+
+  .social-media-icon {
+    width: 25px;
+    height: 25px;
   }
 }

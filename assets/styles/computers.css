@@ -1,3 +1,26 @@
+/* body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.social-media-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.logo {
+  width: 200px;
+  height: 45px;
+}
+
 /* flex items */
 .card-text-container, #quote-section, #qualities-section, header, #hero-text-container,
 .content-card, #gallery-section, #video-container, #staff-section, .text-container, .footer-section-container, footer {
@@ -304,6 +327,11 @@ nav {
 
 /* desktop devices */
 @media (min-width: 1024px) {
+  .social-media-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
   #video-section, #partners-section, #qualities-section, #staff-section, #gallery-section, footer, header, #quote-section {
     padding: 64px 128px;
   }
