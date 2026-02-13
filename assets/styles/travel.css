@@ -28,7 +28,7 @@ body {
 }
 
 #blog-section, #content-second-container, #sales-section, .footer-text-container,
-#shop-first-container, #info-section-text-container, #travel-header, #content-text-container {
+#shop-first-container, #info-text-container, #travel-header, #content-text-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -52,11 +52,11 @@ body {
   align-items: center;
 }
 
-#travel-nav, #input-container input, .hero-text, #header-button, #content-sideways-text {
+#travel-nav, #header-inputs input, .hero-text, #header-button, #content-sideways-text {
   letter-spacing: 2px;
 }
 
-.blog-container, .content-image, #shop-first-container, #shop-second-container, .body-button {
+.blog, .content-image, #shop-first-container, #shop-second-container, .body-button {
   border-radius: 16px;
 }
 
@@ -139,7 +139,7 @@ body {
   text-align: left;
 }
 
-#info-section-text-container {
+#info-text-container {
   width: 100%;
   row-gap: 24px;
   text-align: center;
@@ -272,7 +272,7 @@ body {
   justify-content: center;
 }
 
-.blog-container {
+.blog {
   width: 100%;
   border: 1px solid #41fc70;
   background-color: beige;
@@ -331,7 +331,7 @@ body {
   background-attachment: fixed;
 }
 
-#input-container input {
+#header-inputs input {
   padding: 15px;
   border: none;
   outline: none;
@@ -355,7 +355,7 @@ body {
   text-align: center;
 }
 
-#input-container {
+#header-inputs {
   width: 100%;
 }
 
@@ -387,7 +387,7 @@ body {
 
 /* tablet devices */
 @media (min-width: 768px) {
-  .blog-container {
+  .blog {
     width: 45%;
     box-shadow: 16px 16px rgb(176, 255, 169);
   }
@@ -409,7 +409,7 @@ body {
     letter-spacing: 32px;
   }
 
-  #input-container {
+  #header-inputs {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -455,7 +455,7 @@ body {
     display: block;
   }
 
-  #info-section-text-container {
+  #info-text-container {
     width: 48%;
     row-gap: 16px;
     padding-bottom: 64px;
