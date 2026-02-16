@@ -22,8 +22,8 @@ body {
 }
 
 /* flex items */
-.card-text-container, #quote-section, #qualities-section, #computers-header, #hero-text-container,
-.content-card, #gallery-section, #video-container, #staff-section, .partners-text-container, .video-text-container, .footer-section, #computers-footer {
+.card-text-container, #quote-section, #qualities-section, #computers-header, #hero-text-container, .content-card, #gallery-section,
+#video-container, #staff-section, .partners-text-container, .video-text-container, .footer-section, #computers-footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -46,7 +46,7 @@ body {
 }
 
 /* background color */
-#qualities-section, #staff-section,  #quote-section {
+#qualities-section, #staff-section, #quote-section {
   background-color: #e9f9ff;
 }
 
@@ -230,7 +230,7 @@ body {
   justify-content: center;
 }
 
-.staff-img {
+.staff-image {
   position: absolute; 
   top: 100px; 
   left: 100px;
@@ -242,6 +242,24 @@ body {
   height: 150px;
   width: 150px; 
   position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+#first-staff {
+  background-image: url(../images/computers/staff_1.png);
+}
+
+#second-staff {
+  background-image: url(../images/computers/staff_2.jpg);
+}
+
+#third-staff {
+  background-image: url(../images/computers/staff_3.jpg);
+}
+
+#fourth-staff {
+  background-image: url(../images/computers/staff_4.png);
 }
 
 /* hero section */
@@ -282,7 +300,7 @@ body {
 #hero-text-container {
   gap: 72px;
   color: azure;
-  padding-top: 32px;
+  padding-top: 72px;
   line-height: 1.5;
   align-items: center;
 }
@@ -362,22 +380,6 @@ body {
     height: 225px;
     width: 300px;
   }
-}
-
-/* desktop devices */
-@media (min-width: 1024px) {
-  .social-media-icon {
-    width: 25px;
-    height: 25px;
-  }
-
-  .content-card {
-    width: 32%;
-  }
-  
-  #video-section, #partners-section, #qualities-section, #staff-section, #gallery-section, #computers-footer, #computers-header, #quote-section {
-    padding: 64px 128px;
-  }
 
   .section-header-text {
     font-size: 2rem;
@@ -393,6 +395,22 @@ body {
 
   .larger-text {
     font-size: 1.125rem;
+  }
+}
+
+/* desktop devices */
+@media (min-width: 1024px) {
+  .social-media-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .content-card {
+    width: 32%;
+  }
+  
+  #video-section, #partners-section, #qualities-section, #staff-section, #gallery-section, #computers-footer, #computers-header, #quote-section {
+    padding: 64px 128px;
   }
 
   #computers-footer {
@@ -434,7 +452,7 @@ body {
     height: 350px;
   }
 
-  .staff-img {
+  .staff-image {
     top: 150px; 
     left: 125px;
     width: 75px;
