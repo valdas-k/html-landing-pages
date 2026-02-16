@@ -34,7 +34,7 @@ body {
   flex-wrap: wrap;
 }
 
-#plant-care-info, #header-icons, #plants-nav, ul, #care-section, #care-image-container, #plants-footer,
+#plant-care-info, #header-icons, #plants-nav, #plants-nav ul, #care-section, #care-image-container, #plants-footer,
 #bedroom-section, #bedroom-images, #shop-button-container, .arrivals-row {
   display: flex;
   flex-direction: row;
@@ -96,7 +96,6 @@ body {
 
 /* nav */
 #plants-nav {
-  justify-content: space-between;
   justify-content: center;
   letter-spacing: 4px;
   text-transform: capitalize;

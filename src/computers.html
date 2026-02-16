@@ -8,30 +8,34 @@
     <link rel="icon" type="image/x-icon" href="../assets/icons/computers/computers.svg">
   </head>
   <body>
-    <header>
-      <div>
-        <nav>
-          <a href="../index.html"><img src="../assets/icons/logos/computers_logo.svg" class="logo" alt="Website logo with website name"></a>
-          <ul>
-            <li><a href="../src/travel.html">TRAVEL</a></li>
-            <li><a href="../src/plants.html">PLANTS</a></li>
-            <li><a href="../src/blogs.html">BLOGS</a></li>
-            <li><a href="../src/computers.html">COMPUTERS</a></li>
-          </ul>
-        </nav>
-        <hr id="header-divider">
-      </div>
+    <header id="computers-header">
+      <nav id="computers-nav">
+        <a href="../index.html"><img src="../assets/icons/logos/computers_logo.svg" class="logo" alt="Website logo with website name"></a>
+        <ul>
+          <li><a href="../src/travel.html">travel</a></li>
+          <li><a href="../src/plants.html">plants</a></li>
+          <li><a href="../src/blogs.html">blogs</a></li>
+          <li><a href="../src/computers.html">computers</a></li>
+        </ul>
+      </nav>
+      <hr id="header-divider">
       <div id="hero-text-container">
-        <h1 class="hero-header-text">AWESOME WEBSITE TEMPLATE</h1>
+        <h1 class="hero-header-text">awesome Website Template</h1>
         <p class="hero-text">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
       </div>
     </header>
-
+    <section id="quote-section">
+      <h2 class="section-header-text">Create Your Own Genuine Web Masterpiece</h2>
+      <p class="quote-text">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      </p>
+    </section>
     <section id="partners-section">
-      <div class="text-container">
+      <div class="partners-text-container">
         <h2 class="section-header-text">Beautiful Layouts</h2>
         <p class="partners-text">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -39,15 +43,26 @@
         </p>
       </div>
       <div id="partners-grid">
-        <a href="#"><img src="../assets/icons/computers/partners_1.svg" loading="lazy" class="partners-image" alt="Linux Mint"></a>
-        <a href="#"><img src="../assets/icons/computers/partners_2.svg" loading="lazy" class="partners-image" alt="Ubuntu"></a>
-        <a href="#"><img src="../assets/icons/computers/partners_3.svg" loading="lazy" class="partners-image" alt="Arch Linux"></a>
-        <a href="#"><img src="../assets/icons/computers/partners_4.svg" loading="lazy" class="partners-image" alt="Fedora"></a>
-        <a href="#"><img src="../assets/icons/computers/partners_5.svg" loading="lazy" class="partners-image" alt="Elementary OS"></a>
-        <a href="#"><img src="../assets/icons/computers/partners_6.svg" loading="lazy" class="partners-image" alt="openSUSE"></a>
+        <a href="https://www.linuxmint.com/">
+          <img src="../assets/icons/computers/partners_1.svg" loading="lazy" class="partners-image" alt="Linux Mint">
+        </a>
+        <a href="https://ubuntu.com/">
+          <img src="../assets/icons/computers/partners_2.svg" loading="lazy" class="partners-image" alt="Ubuntu">
+        </a>
+        <a href="https://archlinux.org/">
+          <img src="../assets/icons/computers/partners_3.svg" loading="lazy" class="partners-image" alt="Arch Linux">
+        </a>
+        <a href="https://fedoraproject.org/">
+          <img src="../assets/icons/computers/partners_4.svg" loading="lazy" class="partners-image" alt="Fedora">
+        </a>
+        <a href="https://elementary.io/">
+          <img src="../assets/icons/computers/partners_5.svg" loading="lazy" class="partners-image" alt="Elementary OS">
+        </a>
+        <a href="https://www.opensuse.org/">
+          <img src="../assets/icons/computers/partners_6.svg" loading="lazy" class="partners-image" alt="openSUSE">
+        </a>
       </div>
     </section>
-
     <section id="qualities-section">
       <h3 class="section-header-text">Qualities To Be Proud Of</h3>
       <div id="cards-container">
@@ -89,23 +104,17 @@
         </div>
       </div>
     </section>
-
-    <section id="gallery-section">
-      <h4 class="section-header-text">Let Them Know Why You're The Best</h4>
-      <p class="gallery-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <div id="gallery-grid">
-        <a href="../assets/images/computers/gallery_1.jpg">
-          <img src="../assets/images/computers/gallery_1.jpg" loading="lazy" class="gallery-img" alt="Smart devices">
-        </a>
-        <a href="../assets/images/computers/gallery_2.jpg">
-          <img src="../assets/images/computers/gallery_2.jpg" loading="lazy" class="gallery-img" alt="Computer programming">
-        </a>
-        <a href="../assets/images/computers/gallery_3.jpg">
-          <img src="../assets/images/computers/gallery_3.jpg" loading="lazy" class="gallery-img" alt="Keyboard">
-        </a>
-        <a href="../assets/images/computers/gallery_4.jpg">
-          <img src="../assets/images/computers/gallery_4.jpg" loading="lazy" class="gallery-img" alt="Programmer">
-        </a>
+    <section id="video-section">
+      <div id="video-container">
+        <img src="../assets/images/computers/video.png" id="video-image" alt="Page layout schematics">
+      </div>
+      <div class="video-text-container">
+        <h6 class="section-header-text">What Are You Waiting For? Start It Today!</h6>
+        <p class="video-text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a href="#"><button id="video-button">FIND OUT MORE</button></a>
       </div>
     </section>
 
@@ -155,39 +164,32 @@
       </div>
     </section>
 
-    <section id="video-section">
-      <div id="video-container">
-        <img src="../assets/images/computers/video.png" id="video-image" alt="Page layout schematics">
-      </div>
-      <div class="text-container">
-        <h6 class="section-header-text">What Are You Waiting For? Start It Today!</h6>
-        <p class="video-text">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#"><button id="video-button">FIND OUT MORE</button></a>
+    <section id="gallery-section">
+      <h4 class="section-header-text">Let Them Know Why You're The Best</h4>
+      <p class="gallery-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div id="gallery-grid">
+        <a href="../assets/images/computers/gallery_1.jpg">
+          <img src="../assets/images/computers/gallery_1.jpg" loading="lazy" class="gallery-img" alt="Smart devices">
+        </a>
+        <a href="../assets/images/computers/gallery_3.jpg">
+          <img src="../assets/images/computers/gallery_3.jpg" loading="lazy" class="gallery-img" alt="Keyboard">
+        </a>
+        <a href="../assets/images/computers/gallery_4.jpg">
+          <img src="../assets/images/computers/gallery_4.jpg" loading="lazy" class="gallery-img" alt="Programmer">
+        </a>
       </div>
     </section>
-
-    <section id="quote-section">
-      <h6 class="section-header-text">Create Your Own Genuine Web Masterpiece</h6>
-      <p class="quote-text">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </section>
-
-    <footer>
-      <div class="footer-section-container">
+    <footer id="computers-footer">
+      <section class="footer-section">
         <h6 class="section-header-text">About Us</h6>
         <p class="footer-text">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-      </div>
-
-      <div class="footer-section-container">
+      </section>
+      <section class="footer-section">
         <h6 class="section-header-text">Get In Touch</h6>
-        <div id="footer-contacts-container">
+        <div id="footer-contacts">
           <p class="footer-text">Adress:</p>
           <p class="footer-text">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
           <p class="footer-text">Phone:</p>
@@ -195,14 +197,13 @@
           <p class="footer-text">Email:</p>
           <p class="footer-text">computers@page.com</p>
         </div>
-      </div>
-                
-      <div class="footer-section-container">
+      </section>
+      <section class="footer-section">
         <h6 class="section-header-text">Social Media</h6>
         <p class="footer-text">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <div id="footer-icons-container">
+        <div id="footer-icons">
           <a href="https://github.com/valdas-kr">
             <img src="../assets/icons/social/twitter_2.svg" loading="lazy" class="social-media-icon" alt="Twitter icon">
           </a>
@@ -222,7 +223,7 @@
             <img src="../assets/icons/social/youtube.svg" loading="lazy" class="social-media-icon" alt="Youtube icon">
           </a>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
