@@ -68,7 +68,7 @@ body {
 #hero-section {
   padding: 0;
   width: 100%;
-  row-gap: 36px;
+  row-gap: 44px;
   justify-content: center;
 }
 
@@ -165,7 +165,8 @@ body {
 
 .hero-text {
   width: 100%;
-  color: white;
+  padding-bottom: 12px;
+  color: yellow;
 }
 
 .section-header-text {
@@ -295,9 +296,10 @@ body {
 
 /* nav */
 #travel-nav {
+  justify-content: center;
   text-transform: uppercase;
   gap: 16px;
-  justify-content: center;
+  padding-bottom: 24px;
 }
 
 #travel-nav ul {
@@ -321,14 +323,17 @@ body {
   text-decoration: none;
 }
 
+#travel-nav li a:hover {
+  text-decoration: underline 1px blue;
+}
+
 /* header section */
 #travel-header {
-  background: linear-gradient(rgb(255, 255, 255, 0.1)), url(../images/travel/header.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.3)), url(../images/travel/header.png);
   row-gap: 48px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 #header-inputs input {
@@ -414,6 +419,11 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .hero-text {
+    width: 50%;
+    padding-left: 16px;
+  }
 }
 
 /* desktop devices */
@@ -463,12 +473,6 @@ body {
     padding-right: 64px;
     justify-content: center;
     text-align: left;
-  }
-  
-  .hero-text {
-    width: 50%;
-    color: white;
-    padding-left: 16px;
   }
 
   .text {

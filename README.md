@@ -1,12 +1,12 @@
 # Html landing pages
 
-This project consists of several web pages, written in ***HTML***, ***CSS*** and ***JavaScript***.
+This project contains several web pages, written in ***HTML***, ***CSS*** and ***JavaScript***.
 
-All pages cover different topics, such as blogs, computers, plants and travel. These themes are reflected in page design, colors and style. All pages are optimised for different screen resolutions and sizes.
+All pages cover different topics, such as blogs, computers, plants and travel. These themes are reflected in page design, colors and style. All pages are optimised for different devices and screen sizes.
 
 # Assets used
 
-Pictures, icons and other types of assets were used to develop these web pages:
+This project uses various logos, pictures and icons:
 
 - Logos - [looka](https://looka.com/)
 - Icons - [icon-icons](https://icon-icons.com/)
